@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawnmanager : MonoBehaviour
+public class SpawnManager : MonoBehaviour
 {
     public GameObject obstaclePrefab;
     private Vector3 spawnPos = new Vector3(25, 0, 0);
@@ -15,11 +15,11 @@ public class Spawnmanager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void update()
+    void Update()
     {
 
     }
-    void spawnObstacle()
+    void SpawnObstacle()
     {
         Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
     }
